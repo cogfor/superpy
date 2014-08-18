@@ -153,3 +153,8 @@ from pandas.io.data import DataReader
     y = np.asarray(y)
     if p==np.inf:
     """Compute the L**p distance between x and y"""
+        peak1, peak2 = peak2, peak1
+    return np.asarray((peak1, peak2))
+    
+    out['metrics'] = np.asarray((metrics, metrics_err))
+    '''Compute the sqrt of the mean of the squares (RMS)'''
