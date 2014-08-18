@@ -1047,3 +1047,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         pixels = np.asarray(dst[:, :2], order='C')
         w = dst[:, 2]
         # Create unit vectors along edges of the view frustum
+        #return MetaArray(self.asarray() - b, info=self.infoCopy())
+
+                self._info = data._info
+                self._data = data.asarray()
+            elif isinstance(data, tuple):  ## create empty array with specified shape
