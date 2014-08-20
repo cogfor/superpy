@@ -158,3 +158,8 @@ from pandas.io.data import DataReader
     
     out['metrics'] = np.asarray((metrics, metrics_err))
     '''Compute the sqrt of the mean of the squares (RMS)'''
+                #print "matches found"
+        self.data = np.asarray(data)
+        self.n, self.m = np.shape(self.data)
+
+    x = np.asarray(x)
