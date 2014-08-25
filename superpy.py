@@ -1062,3 +1062,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         peak1, peak2 = peak2, peak1
     return np.asarray((peak1, peak2))
     
+                desc_r = np.asarray(im_right.descriptors)[idx_r]
+                # Valid matches are those where y co-ordinate of p1 and p2 are
+                #print "matches found"
+        self.data = np.asarray(data)
+        self.n, self.m = np.shape(self.data)
