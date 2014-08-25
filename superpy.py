@@ -168,3 +168,8 @@ from pandas.io.data import DataReader
         ma = MetaArray._h5py_metaarray.MetaArray(file=fileName)
         self._data = ma.asarray()._getValue()
         self._info = ma._info._getValue()
+                kwargs[key] = np.asarray((averval, avererr))
+    return kwargs
+    tensiondata = {}
+        dref = np.asarray([PIX_ERR, 0])
+        if (fit[-1] != 1) or (err == None) or (sum(err[2:]) >= mismatch):
