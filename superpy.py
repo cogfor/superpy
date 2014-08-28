@@ -1067,3 +1067,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                 #print "matches found"
         self.data = np.asarray(data)
         self.n, self.m = np.shape(self.data)
+
+            #create dataset
+            data = npy.asarray(data)
+            ds = hdf5_group.create_dataset(s['dataset_name'], data.shape, dtype=float)
+        self.tri_halo[:,2:6] = self.tri_halo[:,2:6] * R[:,npy.newaxis]
