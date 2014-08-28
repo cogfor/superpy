@@ -173,3 +173,8 @@ from pandas.io.data import DataReader
     tensiondata = {}
         dref = np.asarray([PIX_ERR, 0])
         if (fit[-1] != 1) or (err == None) or (sum(err[2:]) >= mismatch):
+                            start=start1, end=end1)).squeeze()
+investment = asarray(DataReader('GPDIC96', 'fred',
+                                start=start1, end=end1)).squeeze()
+consumption = asarray(DataReader('PCECC96', 'fred',
+                                start=start1, end=end1)).squeeze()
