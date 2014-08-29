@@ -178,3 +178,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
                                 start=start1, end=end1)).squeeze()
 consumption = asarray(DataReader('PCECC96', 'fred',
                                 start=start1, end=end1)).squeeze()
+    out['piprads'] = np.asarray((piprads, piprads_err))
+    out['vess'] = np.asarray((vess, vess_err))
+    out['asps'] = np.asarray((asps, asps_err))
+    return out, extra_out
+    out = {}
