@@ -1072,3 +1072,8 @@ output = asarray(DataReader('GDPC1', 'fred',
             data = npy.asarray(data)
             ds = hdf5_group.create_dataset(s['dataset_name'], data.shape, dtype=float)
         self.tri_halo[:,2:6] = self.tri_halo[:,2:6] * R[:,npy.newaxis]
+    results['piprad'] = np.asarray((piprad,piprad_err))
+                avererr = err.reshape((-1,aver)).mean(axis=1)
+                kwargs[key] = np.asarray((averval, avererr))
+    return kwargs
+    tensiondata = {}
