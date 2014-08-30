@@ -1082,3 +1082,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         self.assertTrue(np.all(cn.asarray() == np.array([[0.1,0.2],[0.3,0.4]])))
         
         
+            extra_img['piprad'] = np.asarray((piprad, PIX_ERR))
+            extra_img['profile'] = profile
+    out['piprads'] = np.asarray((piprads, piprads_err))
+    out['vess'] = np.asarray((vess, vess_err))
+    out['asps'] = np.asarray((asps, asps_err))
