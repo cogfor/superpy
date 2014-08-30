@@ -1077,3 +1077,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                 kwargs[key] = np.asarray((averval, avererr))
     return kwargs
     tensiondata = {}
+        self.assertTrue(isinstance(s, BinaryConfusionMatrix))
+        self.assertTrue(isinstance(cn, BinaryConfusionMatrix))
+        self.assertTrue(np.all(cn.asarray() == np.array([[0.1,0.2],[0.3,0.4]])))
+        
+        
