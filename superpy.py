@@ -183,3 +183,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
     out['asps'] = np.asarray((asps, asps_err))
     return out, extra_out
     out = {}
+        cart_coords = misctools.spherical_to_cartesian(
+            np.asarray([radius, theta, phi]))
+        cart_coords = cart_coords[[0, 2]].T
+                desc_l = np.asarray(im_left.descriptors)[idx_l]
+                kp_r = np.asarray(im_right.keypoints)[idx_r]
