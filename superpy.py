@@ -1087,3 +1087,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     out['piprads'] = np.asarray((piprads, piprads_err))
     out['vess'] = np.asarray((vess, vess_err))
     out['asps'] = np.asarray((asps, asps_err))
+        xj = asarray(xj)
+
+    xycoords = asarray(xycoords)
+    assert (Nx == int(Nx)), 'Input "Nx" must be an integer type.'
+        yj = asarray(yj)
