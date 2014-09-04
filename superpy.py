@@ -1092,3 +1092,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     xycoords = asarray(xycoords)
     assert (Nx == int(Nx)), 'Input "Nx" must be an integer type.'
         yj = asarray(yj)
+    X = np.asarray(X)
+    minX, maxX = np.min(X), np.max(X)
+    # Learn the model. Remember our function returns Python lists,
+                        im = cv2.resize(im, sz)
+                    X.append(np.asarray(im, dtype=np.uint8))
