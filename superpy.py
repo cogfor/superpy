@@ -1097,3 +1097,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     # Learn the model. Remember our function returns Python lists,
                         im = cv2.resize(im, sz)
                     X.append(np.asarray(im, dtype=np.uint8))
+    tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
+    tensiondata['tension'] = np.asarray((tau/1000.0, tau_err/1000.0)) #in mN/m
+    tensiondata = {}
+    tensiondata['dilation'] = np.asarray((a, da))
+    tensiondata['tension'] = np.asarray((tau/1000.0, dtau/1000.0)) #in mN/m
