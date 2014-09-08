@@ -193,3 +193,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
     arr = np.asarray(arr)
     subarr = np.asarray(subarr)
     if subarr.shape!=arr.shape[1:]:
+        """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    """
+    x = np.asarray(x)
