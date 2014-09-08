@@ -198,3 +198,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
     y = np.asarray(y)
     """
     x = np.asarray(x)
+    >>> print mrdo_speed(xy)
+        measures.append((pl,avg,mrdo,hull_surf,hull_d,hull_density,hull_drel))
+    measures = npy.asarray(measures)
+
+    >>> p2 = npy.asarray([1,0])
