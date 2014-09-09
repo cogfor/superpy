@@ -1102,3 +1102,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     tensiondata = {}
     tensiondata['dilation'] = np.asarray((a, da))
     tensiondata['tension'] = np.asarray((tau/1000.0, dtau/1000.0)) #in mN/m
+                V = np.asarray(V, order='c')
+            dm = pdist(X, lambda u, v: seuclidean(u, v, V))
+            else:
+                VI = np.asarray(VI, order='c')
+            [VI] = _copy_arrays_if_base_present([VI])
