@@ -1107,3 +1107,8 @@ output = asarray(DataReader('GDPC1', 'fred',
             else:
                 VI = np.asarray(VI, order='c')
             [VI] = _copy_arrays_if_base_present([VI])
+    out['pips'] = np.asarray((pip, PIX_ERR*np.ones_like(pip)))
+        f = h5.File(filename,  'w')
+        f.create_dataset("cmat", data=np.asarray(self.cmat ))
+        f.create_dataset("dist", data=np.asarray(self.dist))
+        f.create_dataset("rot", data=np.asarray(self.rot))
