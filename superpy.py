@@ -208,3 +208,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
             refs_err = np.append(refs_err, sum(err[2:]))
                     k*k*dk*dk*(k*x0+b-y0)**2/(1+k*k))/(1+k*k)
     return np.asarray((np.fabs(dist), dist_err))
+        P = np.asarray(self.P, dtype=np.float)
+        dst = blas.dgemv(np.array([P], order='C'), src)
+        pixels = np.asarray(dst[:, :2], order='C')
+        w = dst[:, 2]
+        # Create unit vectors along edges of the view frustum
