@@ -1112,3 +1112,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         f.create_dataset("cmat", data=np.asarray(self.cmat ))
         f.create_dataset("dist", data=np.asarray(self.dist))
         f.create_dataset("rot", data=np.asarray(self.rot))
+
+        #model center
+        self.center = npy.asarray((x0,y0),dtype=float)
+
+        #model center
