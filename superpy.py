@@ -1117,3 +1117,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         self.center = npy.asarray((x0,y0),dtype=float)
 
         #model center
+    Hom[2,2]=1
+    Homs.append(np.asarray(Hom,dtype=float))
+    Rot.append(np.asarray(tmpRot,dtype=float))
+    Trans.append(np.asarray(tmpTrans,dtype=float))
+    transDist=np.sqrt(tmpTrans[0,0]*tmpTrans[0,0]+tmpTrans[0,1]*tmpTrans[0,1])
