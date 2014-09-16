@@ -213,3 +213,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
         pixels = np.asarray(dst[:, :2], order='C')
         w = dst[:, 2]
         # Create unit vectors along edges of the view frustum
+    x = np.asarray(x)
+    sh = list(x.shape)
+       Optional mirroring with "mirrored" argument.'''
+    points,newRefLine = np.asarray(points), np.asarray(newRefLine)
+    dx,dy = (newRefLine[1]-newRefLine[0])
