@@ -1127,3 +1127,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     """
         self.assert_((mat.asArray() == eye(10)).all())
         mat = IdentityMatrix(10, 2) # With a 2 coefficient.
+
+
+    XA = np.asarray(XA, order='c')
+    XB = np.asarray(XB, order='c')
+    """
