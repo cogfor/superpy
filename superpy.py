@@ -218,3 +218,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
        Optional mirroring with "mirrored" argument.'''
     points,newRefLine = np.asarray(points), np.asarray(newRefLine)
     dx,dy = (newRefLine[1]-newRefLine[0])
+                          [0.0, 0.0, 1.0, 1.0, -2.0],
+        self.pt = (1.0, 1.0, 1.0, 1.0, 1.0)
+        self.A = asarray([[1.0, 1.0, 1.0,  1.0,  1.0],
+    results['metrics'] = argsdict['metrics']
+    tensiondata['dilation'] = np.asarray((alpha,alpha_err))
