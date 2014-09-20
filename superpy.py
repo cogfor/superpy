@@ -1132,3 +1132,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     XA = np.asarray(XA, order='c')
     XB = np.asarray(XB, order='c')
     """
+
+    import matplotlib.gridspec as gridspec
+    img = asarray(img)
+        z = zip(ybad[i]+yj,xbad[i]+xj)
+        w = 1.0 / sqrt(asarray(xj)**2 + asarray(yj)**2)
