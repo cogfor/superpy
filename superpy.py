@@ -1147,3 +1147,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         peak1, peak2 = peak2, peak1
     return np.asarray((peak1, peak2))
     
+
+        self.pt = (-1.725, 2.9, 0.725)
+        self.A = asarray([[1.0, 0.0, 1.0], [0.0, 1.0, -4.0]])
+        self.b = asarray([-1.0, 0.0])
+        self.bounds = ((None, None), (0.1, 2.9), (0.7, None))
