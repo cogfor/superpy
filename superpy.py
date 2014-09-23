@@ -223,3 +223,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
         self.A = asarray([[1.0, 1.0, 1.0,  1.0,  1.0],
     results['metrics'] = argsdict['metrics']
     tensiondata['dilation'] = np.asarray((alpha,alpha_err))
+    XA = np.asarray(XA, order='c')
+    XB = np.asarray(XB, order='c')
+    """
+    Y = np.asarray(Y, order='c')
+    is_valid_y(Y, throw=True, name='Y')
