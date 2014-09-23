@@ -1142,3 +1142,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         self.assertTrue(np.all(cb.asarray() == np.array([[0.25,0.75],[0.5,0.5]])))
         t = ConfusionMatrix([[4,6],[4,6]])
         self.assertTrue(np.all(s.asarray() == t.asarray()))
+            extra_img['refs'] = refs
+    out['pips'] = np.asarray((pips, pips_err))
+        peak1, peak2 = peak2, peak1
+    return np.asarray((peak1, peak2))
+    
