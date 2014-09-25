@@ -1152,3 +1152,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         self.A = asarray([[1.0, 0.0, 1.0], [0.0, 1.0, -4.0]])
         self.b = asarray([-1.0, 0.0])
         self.bounds = ((None, None), (0.1, 2.9), (0.7, None))
+
+                self._info = data._info
+                self._data = data.asarray()
+            elif isinstance(data, tuple):  ## create empty array with specified shape
+        ma = MetaArray._h5py_metaarray.MetaArray(file=fileName)
