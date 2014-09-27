@@ -228,3 +228,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
     """
     Y = np.asarray(Y, order='c')
     is_valid_y(Y, throw=True, name='Y')
+        rx = np.tile(refx,N)
+            a, b, x0, s = fit[0]
+            refs = np.append(refs, np.asarray((x0 + s, refx)), axis = 1)
+            #taking err_x0+err_s while ref = x0+s
+        if (fit[-1] != 1) or (err == None) or (sum(err[2:]) >= mismatch):
