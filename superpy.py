@@ -1157,3 +1157,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                 self._data = data.asarray()
             elif isinstance(data, tuple):  ## create empty array with specified shape
         ma = MetaArray._h5py_metaarray.MetaArray(file=fileName)
+    results['piprad'] = np.asarray((piprad,piprad_err))
+                avererr = err.reshape((-1,aver)).mean(axis=1)
+                kwargs[key] = np.asarray((averval, avererr))
+    return kwargs
+    tensiondata = {}
