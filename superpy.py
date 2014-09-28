@@ -233,3 +233,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
             refs = np.append(refs, np.asarray((x0 + s, refx)), axis = 1)
             #taking err_x0+err_s while ref = x0+s
         if (fit[-1] != 1) or (err == None) or (sum(err[2:]) >= mismatch):
+import pandas as pd
+from numpy import asarray
+from pandas.io.data import DataReader
+                                start=start1, end=end1)).squeeze()
+        self.tri_soma[:,:] = self.tri_soma[:,:]*R
