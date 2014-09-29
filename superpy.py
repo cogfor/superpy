@@ -1167,3 +1167,8 @@ labor = asarray(DataReader('PAYEMS', 'fred',
 output = asarray(DataReader('GDPC1', 'fred',
                             start=start1, end=end1)).squeeze()
 investment = asarray(DataReader('GPDIC96', 'fred',
+            extra_img['piprad'] = np.asarray((piprad, PIX_ERR))
+            extra_img['profile'] = profile
+    out['piprads'] = np.asarray((piprads, piprads_err))
+    out['vess'] = np.asarray((vess, vess_err))
+    out['asps'] = np.asarray((asps, asps_err))
