@@ -1162,3 +1162,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                 kwargs[key] = np.asarray((averval, avererr))
     return kwargs
     tensiondata = {}
+labor = asarray(DataReader('PAYEMS', 'fred',
+# Use pandas DataReader to get data from fred
+output = asarray(DataReader('GDPC1', 'fred',
+                            start=start1, end=end1)).squeeze()
+investment = asarray(DataReader('GPDIC96', 'fred',
