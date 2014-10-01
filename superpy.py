@@ -1172,3 +1172,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     out['piprads'] = np.asarray((piprads, piprads_err))
     out['vess'] = np.asarray((vess, vess_err))
     out['asps'] = np.asarray((asps, asps_err))
+            #create dataset
+            data = npy.asarray(data)
+            ds = hdf5_group.create_dataset(s['dataset_name'], data.shape, dtype=float)
+        self.tri_halo[:,2:6] = self.tri_halo[:,2:6] * R[:,npy.newaxis]
+        self.tri_halo[:,2:6] += npy.asarray([x,y,x,y])
