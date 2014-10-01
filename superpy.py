@@ -238,3 +238,8 @@ from numpy import asarray
 from pandas.io.data import DataReader
                                 start=start1, end=end1)).squeeze()
         self.tri_soma[:,:] = self.tri_soma[:,:]*R
+  rCam.trans=np.asarray(tvecs)
+
+      #convert cvMat to numpy array
+      tmpIm = np.asarray(cvFinal)
+      
