@@ -1177,3 +1177,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
             ds = hdf5_group.create_dataset(s['dataset_name'], data.shape, dtype=float)
         self.tri_halo[:,2:6] = self.tri_halo[:,2:6] * R[:,npy.newaxis]
         self.tri_halo[:,2:6] += npy.asarray([x,y,x,y])
+    X = np.asarray(X)
+    minX, maxX = np.min(X), np.max(X)
+    # Learn the model. Remember our function returns Python lists,
+                        im = cv2.resize(im, sz)
+                    X.append(np.asarray(im, dtype=np.uint8))
