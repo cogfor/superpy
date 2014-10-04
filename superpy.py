@@ -1182,3 +1182,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     # Learn the model. Remember our function returns Python lists,
                         im = cv2.resize(im, sz)
                     X.append(np.asarray(im, dtype=np.uint8))
+        self.assert_((mat.asArray() == self.laplacian).all())
+
+        mat.setValues(bandIndices[2], [1]*9)
+        self.assert_((mat.asArray() == self.laplacian).all())
+
