@@ -1187,3 +1187,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         mat.setValues(bandIndices[2], [1]*9)
         self.assert_((mat.asArray() == self.laplacian).all())
 
+                V = np.asarray(V, order='c')
+            dm = pdist(X, lambda u, v: seuclidean(u, v, V))
+            else:
+                VI = np.asarray(VI, order='c')
+            [VI] = _copy_arrays_if_base_present([VI])
