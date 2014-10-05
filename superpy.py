@@ -243,3 +243,8 @@ from pandas.io.data import DataReader
       #convert cvMat to numpy array
       tmpIm = np.asarray(cvFinal)
       
+        if x.shape[-1] != self.m:
+        """
+        x = np.asarray(x)
+        if np.shape(x)[-1] != self.m:
+        elif len(np.shape(r))==1:
