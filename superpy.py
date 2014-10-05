@@ -1192,3 +1192,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
             else:
                 VI = np.asarray(VI, order='c')
             [VI] = _copy_arrays_if_base_present([VI])
+    xycoords = asarray(xycoords)
+    assert (Nx == int(Nx)), 'Input "Nx" must be an integer type.'
+        yj = asarray(yj)
+
+                          [0.0, 0.0, 1.0, -2.0, -2.0]])
