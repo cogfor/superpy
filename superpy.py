@@ -1197,3 +1197,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         yj = asarray(yj)
 
                           [0.0, 0.0, 1.0, -2.0, -2.0]])
+    n, kk = y.shape
+    """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if p==np.inf:
