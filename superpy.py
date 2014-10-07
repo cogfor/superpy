@@ -248,3 +248,8 @@ from pandas.io.data import DataReader
         x = np.asarray(x)
         if np.shape(x)[-1] != self.m:
         elif len(np.shape(r))==1:
+    y = np.asarray(y, dtype=np.int32)
+    # the OpenCV wrapper happy:
+    # If a out_dir is given, set it:
+
+    X = _convert_to_double(np.asarray(X, order='c'))
