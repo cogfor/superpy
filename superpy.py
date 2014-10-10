@@ -1202,3 +1202,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     x = np.asarray(x)
     y = np.asarray(y)
     if p==np.inf:
+    Hom[2,2]=1
+    Homs.append(np.asarray(Hom,dtype=float))
+    Rot.append(np.asarray(tmpRot,dtype=float))
+    Trans.append(np.asarray(tmpTrans,dtype=float))
+    transDist=np.sqrt(tmpTrans[0,0]*tmpTrans[0,0]+tmpTrans[0,1]*tmpTrans[0,1])
