@@ -253,3 +253,6 @@ from pandas.io.data import DataReader
     # If a out_dir is given, set it:
 
     X = _convert_to_double(np.asarray(X, order='c'))
+    from scipy.interpolate import interp1d
+    dcb_radiance = asarray(dcb_radiance)
+    assert (dcb_radiance.ndim == 3), 'Input "dcb_radiance" must have three dimensions.'
