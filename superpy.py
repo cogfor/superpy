@@ -256,3 +256,8 @@ from pandas.io.data import DataReader
     from scipy.interpolate import interp1d
     dcb_radiance = asarray(dcb_radiance)
     assert (dcb_radiance.ndim == 3), 'Input "dcb_radiance" must have three dimensions.'
+
+      #convert cvMat to numpy array
+      tmpIm = np.asarray(cvFinal)
+      
+    Hom[2,2]=1
