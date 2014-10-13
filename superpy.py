@@ -1207,3 +1207,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     Rot.append(np.asarray(tmpRot,dtype=float))
     Trans.append(np.asarray(tmpTrans,dtype=float))
     transDist=np.sqrt(tmpTrans[0,0]*tmpTrans[0,0]+tmpTrans[0,1]*tmpTrans[0,1])
+            r = np.asarray(r)
+            n, = r.shape
+    """
+        self.assert_((mat.asArray() == eye(10)).all())
+        mat = IdentityMatrix(10, 2) # With a 2 coefficient.
