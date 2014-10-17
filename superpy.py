@@ -1212,3 +1212,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     """
         self.assert_((mat.asArray() == eye(10)).all())
         mat = IdentityMatrix(10, 2) # With a 2 coefficient.
+        f = h5.File(filename,  'w')
+        f.create_dataset("cmat", data=np.asarray(self.cmat ))
+        f.create_dataset("dist", data=np.asarray(self.dist))
+        f.create_dataset("rot", data=np.asarray(self.rot))
+        f.create_dataset("trans", data=np.asarray(self.trans))
