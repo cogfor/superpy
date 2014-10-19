@@ -266,3 +266,8 @@ from pandas.io.data import DataReader
     if subarr.shape!=arr.shape[1:]:
         #return MetaArray(self.asarray() - b, info=self.infoCopy())
 
+    x = np.asarray(x)
+    y = np.asarray(y)
+    """
+    x = np.asarray(x)
+    y = np.asarray(y)
