@@ -1222,3 +1222,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     img = asarray(img)
         z = zip(ybad[i]+yj,xbad[i]+xj)
         w = 1.0 / sqrt(asarray(xj)**2 + asarray(yj)**2)
+                #print "matches found"
+        self.data = np.asarray(data)
+        self.n, self.m = np.shape(self.data)
+
+    x = np.asarray(x)
