@@ -1217,3 +1217,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         f.create_dataset("dist", data=np.asarray(self.dist))
         f.create_dataset("rot", data=np.asarray(self.rot))
         f.create_dataset("trans", data=np.asarray(self.trans))
+
+    import matplotlib.gridspec as gridspec
+    img = asarray(img)
+        z = zip(ybad[i]+yj,xbad[i]+xj)
+        w = 1.0 / sqrt(asarray(xj)**2 + asarray(yj)**2)
