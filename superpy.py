@@ -271,3 +271,8 @@ from pandas.io.data import DataReader
     """
     x = np.asarray(x)
     y = np.asarray(y)
+    return np.asarray(pressure), aver, mesg
+
+    out['vess'] = np.asarray((ves, PIX_ERR*np.ones_like(ves)))
+    out['asps'] = np.asarray((asp, PIX_ERR*np.ones_like(asp)))
+    out = {}
