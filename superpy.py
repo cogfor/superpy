@@ -1227,3 +1227,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         self.n, self.m = np.shape(self.data)
 
     x = np.asarray(x)
+                self._data = data.asarray()
+            elif isinstance(data, tuple):  ## create empty array with specified shape
+        ma = MetaArray._h5py_metaarray.MetaArray(file=fileName)
+        self._data = ma.asarray()._getValue()
+        self._info = ma._info._getValue()
