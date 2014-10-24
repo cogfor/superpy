@@ -1232,3 +1232,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         ma = MetaArray._h5py_metaarray.MetaArray(file=fileName)
         self._data = ma.asarray()._getValue()
         self._info = ma._info._getValue()
+        t = ConfusionMatrix([[4,6],[4,6]])
+        self.assertTrue(np.all(s.asarray() == t.asarray()))
+    
+        self.assertTrue(np.all(s.asarray() == t.asarray()))
+        
