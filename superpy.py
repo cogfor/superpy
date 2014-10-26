@@ -276,3 +276,8 @@ from pandas.io.data import DataReader
     out['vess'] = np.asarray((ves, PIX_ERR*np.ones_like(ves)))
     out['asps'] = np.asarray((asp, PIX_ERR*np.ones_like(asp)))
     out = {}
+                desc_l = np.asarray(im_left.descriptors)[idx_l]
+                kp_r = np.asarray(im_right.keypoints)[idx_r]
+                desc_r = np.asarray(im_right.descriptors)[idx_r]
+                # Valid matches are those where y co-ordinate of p1 and p2 are
+                #print "matches found"
