@@ -1237,3 +1237,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     
         self.assertTrue(np.all(s.asarray() == t.asarray()))
         
+    out['piprads'] = np.asarray(
+                            (piprad, PIX_ERR*np.sqrt(2)*np.ones_like(piprad)))
+    if img.dtype == np.int32:
+        img = np.asarray(np.asfarray(img), np.int32)
+    return img, mesg
