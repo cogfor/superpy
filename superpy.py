@@ -286,3 +286,8 @@ from pandas.io.data import DataReader
         self.center = npy.asarray((x0,y0),dtype=float)
 
             #create dataset
+    sh = list(x.shape)
+       Optional mirroring with "mirrored" argument.'''
+    points,newRefLine = np.asarray(points), np.asarray(newRefLine)
+    dx,dy = (newRefLine[1]-newRefLine[0])
+    '''Subtract off the mean from x'''
