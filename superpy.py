@@ -281,3 +281,8 @@ from pandas.io.data import DataReader
                 desc_r = np.asarray(im_right.descriptors)[idx_r]
                 # Valid matches are those where y co-ordinate of p1 and p2 are
                 #print "matches found"
+
+        #model center
+        self.center = npy.asarray((x0,y0),dtype=float)
+
+            #create dataset
