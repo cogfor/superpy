@@ -1242,3 +1242,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     if img.dtype == np.int32:
         img = np.asarray(np.asfarray(img), np.int32)
     return img, mesg
+            extra_img['profile'] = profile
+    out['piprads'] = np.asarray((piprads, piprads_err))
+    out['vess'] = np.asarray((vess, vess_err))
+    out['asps'] = np.asarray((asps, asps_err))
+    return out, extra_out
