@@ -291,3 +291,8 @@ from pandas.io.data import DataReader
     points,newRefLine = np.asarray(points), np.asarray(newRefLine)
     dx,dy = (newRefLine[1]-newRefLine[0])
     '''Subtract off the mean from x'''
+
+    >>> p2 = npy.asarray([1,0])
+        self.assertTrue(isinstance(cb, BinaryConfusionMatrix))
+        self.assertTrue(isinstance(s, BinaryConfusionMatrix))
+        self.assertTrue(isinstance(cn, BinaryConfusionMatrix))
