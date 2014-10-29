@@ -1247,3 +1247,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     out['vess'] = np.asarray((vess, vess_err))
     out['asps'] = np.asarray((asps, asps_err))
     return out, extra_out
+  rCam.rot=np.asarray(rvecs)
+  rCam.trans=np.asarray(tvecs)
+
+      #convert cvMat to numpy array
+      tmpIm = np.asarray(cvFinal)
