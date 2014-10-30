@@ -1252,3 +1252,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
 
       #convert cvMat to numpy array
       tmpIm = np.asarray(cvFinal)
+    return x - x.mean(*args,**kwds)
+       This is the equivalent of the "in" operator when using lists instead of arrays.'''
+    arr = np.asarray(arr)
+    subarr = np.asarray(subarr)
+    if subarr.shape!=arr.shape[1:]:
