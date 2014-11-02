@@ -296,3 +296,8 @@ from pandas.io.data import DataReader
         self.assertTrue(isinstance(cb, BinaryConfusionMatrix))
         self.assertTrue(isinstance(s, BinaryConfusionMatrix))
         self.assertTrue(isinstance(cn, BinaryConfusionMatrix))
+                    k*k*dk*dk*(k*x0+b-y0)**2/(1+k*k))/(1+k*k)
+    return np.asarray((np.fabs(dist), dist_err))
+
+            extra_img['piprad'] = np.asarray((piprad, PIX_ERR))
+            extra_img['profile'] = profile
