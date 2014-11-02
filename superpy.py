@@ -1257,3 +1257,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     arr = np.asarray(arr)
     subarr = np.asarray(subarr)
     if subarr.shape!=arr.shape[1:]:
+        
+        
+    def test_asarray(self):
+        c = ConfusionMatrix([[1,2],[3,4]])
+        self.assertTrue(np.all(c.asarray() == np.array([[1,2],[3,4]])))
