@@ -1262,3 +1262,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     def test_asarray(self):
         c = ConfusionMatrix([[1,2],[3,4]])
         self.assertTrue(np.all(c.asarray() == np.array([[1,2],[3,4]])))
+        return None, value
+        return None, None, mesg
+    return np.asarray(pressure), aver, mesg
+
+    out['vess'] = np.asarray((ves, PIX_ERR*np.ones_like(ves)))
