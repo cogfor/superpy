@@ -301,3 +301,8 @@ from pandas.io.data import DataReader
 
             extra_img['piprad'] = np.asarray((piprad, PIX_ERR))
             extra_img['profile'] = profile
+        w = dst[:, 2]
+        # Create unit vectors along edges of the view frustum
+        edge_points = np.asarray([(0, 0), (self.width, 0), 
+                                  (self.width, self.height), (0, self.height)])
+                kp_l = np.asarray(im_left.keypoints)[idx_l]
