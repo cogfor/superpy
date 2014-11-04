@@ -1267,3 +1267,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     return np.asarray(pressure), aver, mesg
 
     out['vess'] = np.asarray((ves, PIX_ERR*np.ones_like(ves)))
+            np.asarray([radius, theta, phi]))
+        cart_coords = cart_coords[[0, 2]].T
+                desc_l = np.asarray(im_left.descriptors)[idx_l]
+                kp_r = np.asarray(im_right.keypoints)[idx_r]
+                desc_r = np.asarray(im_right.descriptors)[idx_r]
