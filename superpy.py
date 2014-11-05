@@ -306,3 +306,8 @@ from pandas.io.data import DataReader
         edge_points = np.asarray([(0, 0), (self.width, 0), 
                                   (self.width, self.height), (0, self.height)])
                 kp_l = np.asarray(im_left.keypoints)[idx_l]
+from pandas.io.data import DataReader
+                                start=start1, end=end1)).squeeze()
+        self.tri_soma[:,:] = self.tri_soma[:,:]*R
+        self.tri_soma[:,:] += npy.asarray([x,y,x,y,x,y])
+
