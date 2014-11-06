@@ -311,3 +311,8 @@ from pandas.io.data import DataReader
         self.tri_soma[:,:] = self.tri_soma[:,:]*R
         self.tri_soma[:,:] += npy.asarray([x,y,x,y,x,y])
 
+    results['metrics'] = argsdict['metrics']
+    tensiondata['dilation'] = np.asarray((alpha,alpha_err))
+    tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
+    tensiondata['tension'] = np.asarray((tau/1000.0, tau_err/1000.0)) #in mN/m
+    tensiondata = {}
