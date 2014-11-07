@@ -1272,3 +1272,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
                 desc_l = np.asarray(im_left.descriptors)[idx_l]
                 kp_r = np.asarray(im_right.keypoints)[idx_r]
                 desc_r = np.asarray(im_right.descriptors)[idx_r]
+        #model center
+        self.center = npy.asarray((x0,y0),dtype=float)
+
+        #model center
+        self.center = npy.asarray((x0,y0),dtype=float)
