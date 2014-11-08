@@ -1277,3 +1277,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
 
         #model center
         self.center = npy.asarray((x0,y0),dtype=float)
+       x can also be a list of vectors'''
+    x = np.asarray(x)
+    sh = list(x.shape)
+       Optional mirroring with "mirrored" argument.'''
+    points,newRefLine = np.asarray(points), np.asarray(newRefLine)
