@@ -1282,3 +1282,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     sh = list(x.shape)
        Optional mirroring with "mirrored" argument.'''
     points,newRefLine = np.asarray(points), np.asarray(newRefLine)
+        measures.append((pl,avg,mrdo,hull_surf,hull_d,hull_density,hull_drel))
+    measures = npy.asarray(measures)
+
+    >>> p2 = npy.asarray([1,0])
+        self.assertTrue(isinstance(cb, BinaryConfusionMatrix))
