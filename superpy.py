@@ -1287,3 +1287,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
 
     >>> p2 = npy.asarray([1,0])
         self.assertTrue(isinstance(cb, BinaryConfusionMatrix))
+            refs = np.append(refs, np.asarray((x0 - s, refx)), axis = 1)
+            refs_err = np.append(refs_err, sum(err[2:]))
+                    k*k*dk*dk*(k*x0+b-y0)**2/(1+k*k))/(1+k*k)
+    return np.asarray((np.fabs(dist), dist_err))
+
