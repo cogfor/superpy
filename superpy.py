@@ -316,3 +316,8 @@ from pandas.io.data import DataReader
     tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
     tensiondata['tension'] = np.asarray((tau/1000.0, tau_err/1000.0)) #in mN/m
     tensiondata = {}
+    measures = npy.asarray(measures)
+
+    """
+    >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
+    >>> print mrdo_speed(xy)
