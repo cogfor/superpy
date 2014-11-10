@@ -321,3 +321,8 @@ from pandas.io.data import DataReader
     """
     >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
     >>> print mrdo_speed(xy)
+            #taking err_x0+err_s while ref = x0+s
+        if (fit[-1] != 1) or (err == None) or (sum(err[2:]) >= mismatch):
+            refs = np.append(refs, np.asarray((centerest, refx)), axis = 1)
+            refs_err = np.append(refs_err, 1)
+        refy = np.asarray((np.argmax(filtered[:mid]), np.argmax(filtered[mid:])+mid))
