@@ -326,3 +326,7 @@ from pandas.io.data import DataReader
             refs = np.append(refs, np.asarray((centerest, refx)), axis = 1)
             refs_err = np.append(refs_err, 1)
         refy = np.asarray((np.argmax(filtered[:mid]), np.argmax(filtered[mid:])+mid))
+    from scipy.interpolate import interp1d
+    dcb_radiance = asarray(dcb_radiance)
+    assert (dcb_radiance.ndim == 3), 'Input "dcb_radiance" must have three dimensions.'
+
