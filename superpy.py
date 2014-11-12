@@ -330,3 +330,8 @@ from pandas.io.data import DataReader
     dcb_radiance = asarray(dcb_radiance)
     assert (dcb_radiance.ndim == 3), 'Input "dcb_radiance" must have three dimensions.'
 
+      tmpIm = np.asarray(cvFinal)
+      
+    Hom[2,2]=1
+    Homs.append(np.asarray(Hom,dtype=float))
+    Rot.append(np.asarray(tmpRot,dtype=float))
