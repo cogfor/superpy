@@ -335,3 +335,8 @@ from pandas.io.data import DataReader
     Hom[2,2]=1
     Homs.append(np.asarray(Hom,dtype=float))
     Rot.append(np.asarray(tmpRot,dtype=float))
+from numpy.testing import *
+from numpy import (arange, asarray, empty, float64, zeros)
+
+        self.pt = (-0.09, 0.03, 0.25, -0.19, 0.03)
+        self.A = asarray([[1.0, 3.0, 0.0, 0.0,  0.0],
