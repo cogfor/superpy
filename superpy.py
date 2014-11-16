@@ -340,3 +340,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
 
         self.pt = (-0.09, 0.03, 0.25, -0.19, 0.03)
         self.A = asarray([[1.0, 3.0, 0.0, 0.0,  0.0],
+
+    X = _convert_to_double(np.asarray(X, order='c'))
+
+
+    XA = np.asarray(XA, order='c')
