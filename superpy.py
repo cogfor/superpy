@@ -345,3 +345,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
 
 
     XA = np.asarray(XA, order='c')
+
+    out['vess'] = np.asarray((ves, PIX_ERR*np.ones_like(ves)))
+    out['asps'] = np.asarray((asp, PIX_ERR*np.ones_like(asp)))
+    out = {}
+    out['piprads'] = np.asarray(
