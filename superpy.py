@@ -350,3 +350,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     out['asps'] = np.asarray((asp, PIX_ERR*np.ones_like(asp)))
     out = {}
     out['piprads'] = np.asarray(
+                kp_r = np.asarray(im_right.keypoints)[idx_r]
+                desc_r = np.asarray(im_right.descriptors)[idx_r]
+                # Valid matches are those where y co-ordinate of p1 and p2 are
+                #print "matches found"
+        self.data = np.asarray(data)
