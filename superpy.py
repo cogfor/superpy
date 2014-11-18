@@ -355,3 +355,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
                 # Valid matches are those where y co-ordinate of p1 and p2 are
                 #print "matches found"
         self.data = np.asarray(data)
+        f.close()
+  rCam = Cam()
+  rCam.cmat=np.asarray(cmat)
+  rCam.dist=np.asarray(distCoeffs)
+  rCam.rot=np.asarray(rvecs)
