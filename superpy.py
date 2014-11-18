@@ -360,3 +360,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
   rCam.cmat=np.asarray(cmat)
   rCam.dist=np.asarray(distCoeffs)
   rCam.rot=np.asarray(rvecs)
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if p == np.inf:
+        """
+        x = np.asarray(x)
