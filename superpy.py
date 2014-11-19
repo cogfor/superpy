@@ -365,3 +365,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     if p == np.inf:
         """
         x = np.asarray(x)
+                    y.append(c)
+    if dtype is None:
+        return np.asarray(X)
+    return np.asarray(X, dtype=dtype)
+
