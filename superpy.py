@@ -370,3 +370,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
         return np.asarray(X)
     return np.asarray(X, dtype=dtype)
 
+    tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
+    results['area'] = np.asarray((area,area_err))
+    results['volume'] = np.asarray((volume,volume_err))
+    results['piprad'] = np.asarray((piprad,piprad_err))
+                avererr = err.reshape((-1,aver)).mean(axis=1)
