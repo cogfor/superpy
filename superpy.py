@@ -385,3 +385,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         f = h5.File(filename, 'w')
         f.create_dataset("trans", data=np.asarray(self.trans))
         f.create_dataset("rot", data=np.asarray(self.rot))
+    """Compute the L**p distance between x and y"""
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if p==np.inf or p==1:
+        """
