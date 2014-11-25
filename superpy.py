@@ -380,3 +380,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
 labor = asarray(DataReader('PAYEMS', 'fred',
 # Use pandas DataReader to get data from fred
 output = asarray(DataReader('GDPC1', 'fred',
+        f.create_dataset("trans", data=np.asarray(self.trans))
+        f.close()
+        f = h5.File(filename, 'w')
+        f.create_dataset("trans", data=np.asarray(self.trans))
+        f.create_dataset("rot", data=np.asarray(self.rot))
