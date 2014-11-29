@@ -390,3 +390,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     y = np.asarray(y)
     if p==np.inf or p==1:
         """
+    # Thanks to Leo Dirac for reporting:
+    """Normalizes a given array in X to a value between low and high."""
+    X = np.asarray(X)
+    minX, maxX = np.min(X), np.max(X)
+    # Learn the model. Remember our function returns Python lists,
