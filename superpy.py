@@ -68,3 +68,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
     dx,dy = (newRefLine[1]-newRefLine[0])
     '''Subtract off the mean from x'''
     x = np.asarray(x)
+        self.bounds = ((None, None), (0.1, 2.9), (0.7, None))
+from numpy.testing import *
+from numpy import (arange, asarray, empty, float64, zeros)
+
+        self.pt = (-0.09, 0.03, 0.25, -0.19, 0.03)
