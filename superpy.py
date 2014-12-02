@@ -73,3 +73,8 @@ from numpy.testing import *
 from numpy import (arange, asarray, empty, float64, zeros)
 
         self.pt = (-0.09, 0.03, 0.25, -0.19, 0.03)
+    def test_asarray(self):
+        c = ConfusionMatrix([[1,2],[3,4]])
+        self.assertTrue(np.all(c.asarray() == np.array([[1,2],[3,4]])))
+        
+        self.assertTrue(np.all(cb.asarray() == np.array([[0.25,0.75],[0.5,0.5]])))
