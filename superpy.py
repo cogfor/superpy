@@ -400,3 +400,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         mat.setRow(9, [1, -1])
         self.assert_((mat.asArray() == self.laplacian).all())
 
+        
+
+        src[:, 3] = 1.0
+        P = np.asarray(self.P, dtype=np.float)
+        dst = blas.dgemv(np.array([P], order='C'), src)
