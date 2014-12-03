@@ -78,3 +78,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
         self.assertTrue(np.all(c.asarray() == np.array([[1,2],[3,4]])))
         
         self.assertTrue(np.all(cb.asarray() == np.array([[0.25,0.75],[0.5,0.5]])))
+    return out, extra_out
+    out = {}
+            extra_img['refs'] = refs
+    out['pips'] = np.asarray((pips, pips_err))
+        peak1, peak2 = peak2, peak1
