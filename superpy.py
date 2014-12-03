@@ -395,3 +395,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     X = np.asarray(X)
     minX, maxX = np.min(X), np.max(X)
     # Learn the model. Remember our function returns Python lists,
+        self.assert_((mat.asArray() == 2*eye(10)).all())
+
+        mat.setRow(9, [1, -1])
+        self.assert_((mat.asArray() == self.laplacian).all())
+
