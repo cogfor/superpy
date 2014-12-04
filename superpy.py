@@ -83,3 +83,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
             extra_img['refs'] = refs
     out['pips'] = np.asarray((pips, pips_err))
         peak1, peak2 = peak2, peak1
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if p == np.inf:
+        """
+        x = np.asarray(x)
