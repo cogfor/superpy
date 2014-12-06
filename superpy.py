@@ -405,3 +405,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         src[:, 3] = 1.0
         P = np.asarray(self.P, dtype=np.float)
         dst = blas.dgemv(np.array([P], order='C'), src)
+    return np.sqrt(np.mean(np.asarray(x)**2,axis=axis))
+
+       x can also be a list of vectors'''
+    x = np.asarray(x)
+    sh = list(x.shape)
