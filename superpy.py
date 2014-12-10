@@ -410,3 +410,8 @@ output = asarray(DataReader('GDPC1', 'fred',
        x can also be a list of vectors'''
     x = np.asarray(x)
     sh = list(x.shape)
+    m, k = x.shape
+    y = np.asarray(y)
+    n, kk = y.shape
+    """
+    x = np.asarray(x)
