@@ -420,3 +420,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         a = self.asarray()
         #if isinstance(b, MetaArray):
             #b = b.asarray()
+        if (fit[-1] != 1) or (err == None) or (sum(err[2:]) >= mismatch):
+            refs = np.append(refs, np.asarray((centerest, refx)), axis = 1)
+            refs_err = np.append(refs_err, 1)
+        rx = np.tile(refx,N)
+            a, b, x0, s = fit[0]
