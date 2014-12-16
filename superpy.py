@@ -88,3 +88,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     if p == np.inf:
         """
         x = np.asarray(x)
+    """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if p == np.inf:
+        """
