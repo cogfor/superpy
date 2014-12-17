@@ -93,3 +93,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     y = np.asarray(y)
     if p == np.inf:
         """
+wages = asarray(DataReader('WASCUR', 'fred',
+                                start=start1, end=end1)).squeeze()
+labor = asarray(DataReader('PAYEMS', 'fred',
+# Use pandas DataReader to get data from fred
+output = asarray(DataReader('GDPC1', 'fred',
