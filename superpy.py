@@ -98,3 +98,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
 labor = asarray(DataReader('PAYEMS', 'fred',
 # Use pandas DataReader to get data from fred
 output = asarray(DataReader('GDPC1', 'fred',
+    '''Subtract off the mean from x'''
+    x = np.asarray(x)
+    return x - x.mean(*args,**kwds)
+       This is the equivalent of the "in" operator when using lists instead of arrays.'''
+    arr = np.asarray(arr)
