@@ -103,3 +103,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     return x - x.mean(*args,**kwds)
        This is the equivalent of the "in" operator when using lists instead of arrays.'''
     arr = np.asarray(arr)
+        self.assertTrue(isinstance(s, BinaryConfusionMatrix))
+        self.assertTrue(isinstance(cn, BinaryConfusionMatrix))
+        self.assertTrue(np.all(cn.asarray() == np.array([[0.1,0.2],[0.3,0.4]])))
+        
+        
