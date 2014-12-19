@@ -425,3 +425,8 @@ output = asarray(DataReader('GDPC1', 'fred',
             refs_err = np.append(refs_err, 1)
         rx = np.tile(refx,N)
             a, b, x0, s = fit[0]
+        c = ConfusionMatrix([[1,2],[3,4]])
+        self.assertTrue(np.all(c.asarray() == np.array([[1,2],[3,4]])))
+        
+        self.assertTrue(np.all(cb.asarray() == np.array([[0.25,0.75],[0.5,0.5]])))
+        t = ConfusionMatrix([[4,6],[4,6]])
