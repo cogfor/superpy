@@ -108,3 +108,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         self.assertTrue(np.all(cn.asarray() == np.array([[0.1,0.2],[0.3,0.4]])))
         
         
+        f.create_dataset("trans", data=np.asarray(self.trans))
+        f.create_dataset("rot", data=np.asarray(self.rot))
+        f.create_dataset("homs", data=np.asarray(self.homs))
+        f.create_dataset("grid", data=np.asarray(self.grid))
+        f.close()
