@@ -113,3 +113,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         f.create_dataset("homs", data=np.asarray(self.homs))
         f.create_dataset("grid", data=np.asarray(self.grid))
         f.close()
+    tensiondata = {}
+    tensiondata['dilation'] = np.asarray((a, da))
+    tensiondata['tension'] = np.asarray((tau/1000.0, dtau/1000.0)) #in mN/m
+    tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
+    results['area'] = np.asarray((area,area_err))
