@@ -118,3 +118,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     tensiondata['tension'] = np.asarray((tau/1000.0, dtau/1000.0)) #in mN/m
     tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
     results['area'] = np.asarray((area,area_err))
+        pixels = np.asarray(dst[:, :2], order='C')
+        w = dst[:, 2]
+        # Create unit vectors along edges of the view frustum
+        edge_points = np.asarray([(0, 0), (self.width, 0), 
+                                  (self.width, self.height), (0, self.height)])
