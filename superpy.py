@@ -123,3 +123,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         # Create unit vectors along edges of the view frustum
         edge_points = np.asarray([(0, 0), (self.width, 0), 
                                   (self.width, self.height), (0, self.height)])
+       x can also be a list of vectors'''
+    x = np.asarray(x)
+    sh = list(x.shape)
+       Optional mirroring with "mirrored" argument.'''
+    points,newRefLine = np.asarray(points), np.asarray(newRefLine)
