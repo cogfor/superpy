@@ -435,3 +435,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     out['pips'] = np.asarray((pips, pips_err))
         peak1, peak2 = peak2, peak1
     return np.asarray((peak1, peak2))
+    >>> print area_of_triangle(p1,p2,p3)
+    """
+    >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
+    >>> print avg_speed(xy)
+
