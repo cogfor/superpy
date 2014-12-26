@@ -128,3 +128,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     sh = list(x.shape)
        Optional mirroring with "mirrored" argument.'''
     points,newRefLine = np.asarray(points), np.asarray(newRefLine)
+    minX, maxX = np.min(X), np.max(X)
+    # Learn the model. Remember our function returns Python lists,
+                        im = cv2.resize(im, sz)
+                    X.append(np.asarray(im, dtype=np.uint8))
+                    y.append(c)
