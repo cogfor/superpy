@@ -440,3 +440,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
     >>> print avg_speed(xy)
 
+        #return MetaArray(self.asarray() - b, info=self.infoCopy())
+
+                self._info = data._info
+                self._data = data.asarray()
+            elif isinstance(data, tuple):  ## create empty array with specified shape
