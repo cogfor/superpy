@@ -133,3 +133,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                         im = cv2.resize(im, sz)
                     X.append(np.asarray(im, dtype=np.uint8))
                     y.append(c)
+            b = b.asarray()
+        a = self.asarray()
+        #if isinstance(b, MetaArray):
+            #b = b.asarray()
+        #return self.asarray() != b
