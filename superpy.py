@@ -445,3 +445,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                 self._info = data._info
                 self._data = data.asarray()
             elif isinstance(data, tuple):  ## create empty array with specified shape
+    results['volume'] = np.asarray((volume,volume_err))
+    results['piprad'] = np.asarray((piprad,piprad_err))
+                avererr = err.reshape((-1,aver)).mean(axis=1)
+                kwargs[key] = np.asarray((averval, avererr))
+    return kwargs
