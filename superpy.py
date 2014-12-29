@@ -450,3 +450,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                 avererr = err.reshape((-1,aver)).mean(axis=1)
                 kwargs[key] = np.asarray((averval, avererr))
     return kwargs
+labor = asarray(DataReader('PAYEMS', 'fred',
+# Use pandas DataReader to get data from fred
+output = asarray(DataReader('GDPC1', 'fred',
+                            start=start1, end=end1)).squeeze()
+investment = asarray(DataReader('GPDIC96', 'fred',
