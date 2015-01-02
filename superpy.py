@@ -143,3 +143,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         pixels = np.asarray(dst[:, :2], order='C')
         w = dst[:, 2]
         # Create unit vectors along edges of the view frustum
+                                start=start1, end=end1)).squeeze()
+import pandas as pd
+from numpy import asarray
+from pandas.io.data import DataReader
+                                start=start1, end=end1)).squeeze()
