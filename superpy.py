@@ -148,3 +148,8 @@ import pandas as pd
 from numpy import asarray
 from pandas.io.data import DataReader
                                 start=start1, end=end1)).squeeze()
+    """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if p==np.inf:
+    """Compute the L**p distance between x and y"""
