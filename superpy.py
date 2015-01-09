@@ -470,3 +470,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     minX, maxX = np.min(X), np.max(X)
     # Learn the model. Remember our function returns Python lists,
                         im = cv2.resize(im, sz)
+        self.assertTrue(isinstance(s, BinaryConfusionMatrix))
+        self.assertTrue(isinstance(cn, BinaryConfusionMatrix))
+        self.assertTrue(np.all(cn.asarray() == np.array([[0.1,0.2],[0.3,0.4]])))
+        
+        
