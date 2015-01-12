@@ -475,3 +475,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         self.assertTrue(np.all(cn.asarray() == np.array([[0.1,0.2],[0.3,0.4]])))
         
         
+            else:
+                V = np.asarray(V, order='c')
+            dm = pdist(X, lambda u, v: seuclidean(u, v, V))
+            else:
+                VI = np.asarray(VI, order='c')
