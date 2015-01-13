@@ -480,3 +480,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
             dm = pdist(X, lambda u, v: seuclidean(u, v, V))
             else:
                 VI = np.asarray(VI, order='c')
+
+    xycoords = asarray(xycoords)
+    assert (Nx == int(Nx)), 'Input "Nx" must be an integer type.'
+        yj = asarray(yj)
+
