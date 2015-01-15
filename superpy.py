@@ -495,3 +495,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     tensiondata['dilation'] = np.asarray((a, da))
     tensiondata['tension'] = np.asarray((tau/1000.0, dtau/1000.0)) #in mN/m
     tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
+        elif len(np.shape(r))==1:
+            r = np.asarray(r)
+            n, = r.shape
+    """
+        self.assert_((mat.asArray() == eye(10)).all())
