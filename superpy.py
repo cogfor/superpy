@@ -485,3 +485,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     assert (Nx == int(Nx)), 'Input "Nx" must be an integer type.'
         yj = asarray(yj)
 
+        self.tri_soma[:,:] += npy.asarray([x,y,x,y,x,y])
+
+        #model center
+        self.center = npy.asarray((x0,y0),dtype=float)
+
