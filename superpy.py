@@ -490,3 +490,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         #model center
         self.center = npy.asarray((x0,y0),dtype=float)
 
+    tensiondata['tension'] = np.asarray((tau/1000.0, tau_err/1000.0)) #in mN/m
+    tensiondata = {}
+    tensiondata['dilation'] = np.asarray((a, da))
+    tensiondata['tension'] = np.asarray((tau/1000.0, dtau/1000.0)) #in mN/m
+    tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
