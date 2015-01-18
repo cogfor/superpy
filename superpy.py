@@ -500,3 +500,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
             n, = r.shape
     """
         self.assert_((mat.asArray() == eye(10)).all())
+    X = _convert_to_double(np.asarray(X, order='c'))
+
+
+    XA = np.asarray(XA, order='c')
+    XB = np.asarray(XB, order='c')
