@@ -505,3 +505,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
 
     XA = np.asarray(XA, order='c')
     XB = np.asarray(XB, order='c')
+    assert (dcb_radiance.ndim == 3), 'Input "dcb_radiance" must have three dimensions.'
+
+    import matplotlib.gridspec as gridspec
+    img = asarray(img)
+        z = zip(ybad[i]+yj,xbad[i]+xj)
