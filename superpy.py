@@ -515,3 +515,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     Trans.append(np.asarray(tmpTrans,dtype=float))
     transDist=np.sqrt(tmpTrans[0,0]*tmpTrans[0,0]+tmpTrans[0,1]*tmpTrans[0,1])
     # so we use np.asarray to turn them into NumPy lists to make
+        self.pt = (-0.09, 0.03, 0.25, -0.19, 0.03)
+        self.A = asarray([[1.0, 3.0, 0.0, 0.0,  0.0],
+                          [0.0, 0.0, 1.0, 1.0, -2.0],
+        self.pt = (1.0, 1.0, 1.0, 1.0, 1.0)
+        self.A = asarray([[1.0, 1.0, 1.0,  1.0,  1.0],
