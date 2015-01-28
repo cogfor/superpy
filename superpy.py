@@ -525,3 +525,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         x = np.asarray(x)
         if x.shape[-1] != self.m:
         """
+        return np.asarray(X)
+    return np.asarray(X, dtype=dtype)
+
+    y = np.asarray(y, dtype=np.int32)
+    # the OpenCV wrapper happy:
