@@ -520,3 +520,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
                           [0.0, 0.0, 1.0, 1.0, -2.0],
         self.pt = (1.0, 1.0, 1.0, 1.0, 1.0)
         self.A = asarray([[1.0, 1.0, 1.0,  1.0,  1.0],
+    if p == np.inf:
+        """
+        x = np.asarray(x)
+        if x.shape[-1] != self.m:
+        """
