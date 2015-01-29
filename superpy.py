@@ -530,3 +530,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
 
     y = np.asarray(y, dtype=np.int32)
     # the OpenCV wrapper happy:
+        self.assert_((mat.asArray() == 2*eye(10)).all())
+
+        (mat, bandIndices) = BandedMatrix(10, -1, 0, 1)  # 10x10 tri-diagonal matrix.
+        self.assert_((mat.asArray() == zeros((10,10))).all())
+        self.assert_(mat.numNonzeros == 28)
