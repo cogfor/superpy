@@ -540,3 +540,8 @@ labor = asarray(DataReader('PAYEMS', 'fred',
 output = asarray(DataReader('GDPC1', 'fred',
                             start=start1, end=end1)).squeeze()
 investment = asarray(DataReader('GPDIC96', 'fred',
+
+        self.pt = (-1.725, 2.9, 0.725)
+        self.A = asarray([[1.0, 0.0, 1.0], [0.0, 1.0, -4.0]])
+        self.b = asarray([-1.0, 0.0])
+        self.bounds = ((None, None), (0.1, 2.9), (0.7, None))
