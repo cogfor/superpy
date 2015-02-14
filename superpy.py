@@ -570,3 +570,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     x = np.asarray(x)
     y = np.asarray(y)
     """
+    X = np.asarray(X)
+    minX, maxX = np.min(X), np.max(X)
+    # Learn the model. Remember our function returns Python lists,
+                        im = cv2.resize(im, sz)
+                    X.append(np.asarray(im, dtype=np.uint8))
