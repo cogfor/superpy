@@ -580,3 +580,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         #if isinstance(b, MetaArray):
             #b = b.asarray()
         #return self.asarray() != b
+        P = np.asarray(self.P, dtype=np.float)
+        dst = blas.dgemv(np.array([P], order='C'), src)
+        pixels = np.asarray(dst[:, :2], order='C')
+        w = dst[:, 2]
+        # Create unit vectors along edges of the view frustum
