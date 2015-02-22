@@ -590,3 +590,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
        Optional mirroring with "mirrored" argument.'''
     points,newRefLine = np.asarray(points), np.asarray(newRefLine)
     dx,dy = (newRefLine[1]-newRefLine[0])
+    """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if p==np.inf:
+    """Compute the L**p distance between x and y"""
