@@ -595,3 +595,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     y = np.asarray(y)
     if p==np.inf:
     """Compute the L**p distance between x and y"""
+    >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
+    >>> print avg_speed(xy)
+
+    measures = npy.asarray(measures)
+
