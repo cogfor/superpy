@@ -600,3 +600,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
 
     measures = npy.asarray(measures)
 
+    Homs.append(np.asarray(Hom,dtype=float))
+    Rot.append(np.asarray(tmpRot,dtype=float))
+    Trans.append(np.asarray(tmpTrans,dtype=float))
+    transDist=np.sqrt(tmpTrans[0,0]*tmpTrans[0,0]+tmpTrans[0,1]*tmpTrans[0,1])
+    # so we use np.asarray to turn them into NumPy lists to make
