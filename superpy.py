@@ -630,3 +630,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         ma = MetaArray._h5py_metaarray.MetaArray(file=fileName)
         self._data = ma.asarray()._getValue()
         self._info = ma._info._getValue()
+        """
+        x = np.asarray(x)
+        if x.shape[-1] != self.m:
+        """
+        x = np.asarray(x)
