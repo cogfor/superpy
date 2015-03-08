@@ -640,3 +640,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
         
     def test_asarray(self):
         c = ConfusionMatrix([[1,2],[3,4]])
+            extra_img['profile'] = profile
+    out['piprads'] = np.asarray((piprads, piprads_err))
+    out['vess'] = np.asarray((vess, vess_err))
+    out['asps'] = np.asarray((asps, asps_err))
+    return out, extra_out
