@@ -645,3 +645,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     out['vess'] = np.asarray((vess, vess_err))
     out['asps'] = np.asarray((asps, asps_err))
     return out, extra_out
+                kp_l = np.asarray(im_left.keypoints)[idx_l]
+        cart_coords = misctools.spherical_to_cartesian(
+            np.asarray([radius, theta, phi]))
+        cart_coords = cart_coords[[0, 2]].T
+                desc_l = np.asarray(im_left.descriptors)[idx_l]
