@@ -650,3 +650,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
             np.asarray([radius, theta, phi]))
         cart_coords = cart_coords[[0, 2]].T
                 desc_l = np.asarray(im_left.descriptors)[idx_l]
+    return x - x.mean(*args,**kwds)
+       This is the equivalent of the "in" operator when using lists instead of arrays.'''
+    arr = np.asarray(arr)
+    subarr = np.asarray(subarr)
+    if subarr.shape!=arr.shape[1:]:
