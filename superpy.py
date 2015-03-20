@@ -660,3 +660,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
     tensiondata['tension'] = np.asarray((tau/1000.0, dtau/1000.0)) #in mN/m
     tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
     results['area'] = np.asarray((area,area_err))
+            else:
+                VI = np.asarray(VI, order='c')
+            [VI] = _copy_arrays_if_base_present([VI])
+wages = asarray(DataReader('WASCUR', 'fred',
+                                start=start1, end=end1)).squeeze()
