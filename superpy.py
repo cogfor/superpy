@@ -670,3 +670,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
 
                           [0.0, 0.0, 1.0, -2.0, -2.0]])
         self.b = asarray([5.0, -3.0])
+        self.center = npy.asarray((x0,y0),dtype=float)
+
+        #model center
+        self.center = npy.asarray((x0,y0),dtype=float)
+
