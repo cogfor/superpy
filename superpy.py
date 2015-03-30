@@ -675,3 +675,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         #model center
         self.center = npy.asarray((x0,y0),dtype=float)
 
+    Rot.append(np.asarray(tmpRot,dtype=float))
+    Trans.append(np.asarray(tmpTrans,dtype=float))
+    transDist=np.sqrt(tmpTrans[0,0]*tmpTrans[0,0]+tmpTrans[0,1]*tmpTrans[0,1])
+    # so we use np.asarray to turn them into NumPy lists to make
+    # Thanks to Leo Dirac for reporting:
