@@ -685,3 +685,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         mat = IdentityMatrix(10, 2) # With a 2 coefficient.
         self.assert_((mat.asArray() == 2*eye(10)).all())
 
+    XA = np.asarray(XA, order='c')
+    XB = np.asarray(XB, order='c')
+    """
+    Y = np.asarray(Y, order='c')
+    is_valid_y(Y, throw=True, name='Y')
