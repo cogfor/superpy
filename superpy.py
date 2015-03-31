@@ -680,3 +680,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
     transDist=np.sqrt(tmpTrans[0,0]*tmpTrans[0,0]+tmpTrans[0,1]*tmpTrans[0,1])
     # so we use np.asarray to turn them into NumPy lists to make
     # Thanks to Leo Dirac for reporting:
+    """
+        self.assert_((mat.asArray() == eye(10)).all())
+        mat = IdentityMatrix(10, 2) # With a 2 coefficient.
+        self.assert_((mat.asArray() == 2*eye(10)).all())
+
