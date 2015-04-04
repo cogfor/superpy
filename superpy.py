@@ -690,3 +690,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
     """
     Y = np.asarray(Y, order='c')
     is_valid_y(Y, throw=True, name='Y')
+    img = asarray(img)
+        z = zip(ybad[i]+yj,xbad[i]+xj)
+        w = 1.0 / sqrt(asarray(xj)**2 + asarray(yj)**2)
+
+        xj = asarray(xj)
