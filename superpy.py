@@ -695,3 +695,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         w = 1.0 / sqrt(asarray(xj)**2 + asarray(yj)**2)
 
         xj = asarray(xj)
+        self.n, self.m = np.shape(self.data)
+
+    x = np.asarray(x)
+    m, k = x.shape
+    y = np.asarray(y)
