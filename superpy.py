@@ -705,3 +705,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
     results['metrics'] = argsdict['metrics']
     tensiondata['dilation'] = np.asarray((alpha,alpha_err))
     tensiondata['tensdim'] = ('mN/m',r'$10^{-3}\frac{N}{m}$')
+        x = np.asarray(x)
+        if x.shape[-1] != self.m:
+        """
+        x = np.asarray(x)
+        if np.shape(x)[-1] != self.m:
