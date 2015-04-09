@@ -710,3 +710,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         """
         x = np.asarray(x)
         if np.shape(x)[-1] != self.m:
+    if img.dtype == np.int32:
+        img = np.asarray(np.asfarray(img), np.int32)
+    return img, mesg
+    out['metrics'] = np.asarray((metrics, np.zeros_like(metrics)))
+    return np.asarray(pressures)[stage], None
