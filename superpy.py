@@ -715,3 +715,5 @@ wages = asarray(DataReader('WASCUR', 'fred',
     return img, mesg
     out['metrics'] = np.asarray((metrics, np.zeros_like(metrics)))
     return np.asarray(pressures)[stage], None
+    from scipy.interpolate import interp1d
+    dcb_radiance = asarray(dcb_radiance)
