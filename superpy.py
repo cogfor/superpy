@@ -717,3 +717,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
     return np.asarray(pressures)[stage], None
     from scipy.interpolate import interp1d
     dcb_radiance = asarray(dcb_radiance)
+
+      #convert cvMat to numpy array
+      tmpIm = np.asarray(cvFinal)
+      
+    Hom[2,2]=1
