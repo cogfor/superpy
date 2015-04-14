@@ -722,3 +722,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
       tmpIm = np.asarray(cvFinal)
       
     Hom[2,2]=1
+    arr = np.asarray(arr)
+    subarr = np.asarray(subarr)
+    if subarr.shape!=arr.shape[1:]:
+        #return MetaArray(self.asarray() - b, info=self.infoCopy())
+
