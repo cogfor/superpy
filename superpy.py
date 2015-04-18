@@ -737,3 +737,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
     out['vess'] = np.asarray((ves, PIX_ERR*np.ones_like(ves)))
     out['asps'] = np.asarray((asp, PIX_ERR*np.ones_like(asp)))
     out = {}
+        mat.setValues(bandIndices[2], [1]*9)
+        self.assert_((mat.asArray() == self.laplacian).all())
+
+        mat.setDiagonal([2]*10)
+        self.assert_((mat.asArray() == 2*eye(10)).all())
