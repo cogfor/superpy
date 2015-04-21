@@ -742,3 +742,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
 
         mat.setDiagonal([2]*10)
         self.assert_((mat.asArray() == 2*eye(10)).all())
+            else:
+                VI = np.asarray(VI, order='c')
+            [VI] = _copy_arrays_if_base_present([VI])
+wages = asarray(DataReader('WASCUR', 'fred',
+                                start=start1, end=end1)).squeeze()
