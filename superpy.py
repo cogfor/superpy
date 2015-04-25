@@ -747,3 +747,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
             [VI] = _copy_arrays_if_base_present([VI])
 wages = asarray(DataReader('WASCUR', 'fred',
                                 start=start1, end=end1)).squeeze()
+    assert (Nx == int(Nx)), 'Input "Nx" must be an integer type.'
+        yj = asarray(yj)
+
+                          [0.0, 0.0, 1.0, -2.0, -2.0]])
+        self.b = asarray([5.0, -3.0])
