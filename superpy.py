@@ -757,3 +757,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
     if p==np.inf:
     """Compute the L**p distance between x and y"""
     x = np.asarray(x)
+            #b = b.asarray()
+        #return self.asarray() != b
+        
+        #if isinstance(b, MetaArray):
+            #b = b.asarray()
