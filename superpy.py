@@ -772,3 +772,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         f.create_dataset("trans", data=np.asarray(self.trans))
         f.close()
         f = h5.File(filename, 'w')
+    
+    out['metrics'] = np.asarray((metrics, metrics_err))
+    '''Compute the sqrt of the mean of the squares (RMS)'''
+    return np.sqrt(np.mean(np.asarray(x)**2,axis=axis))
+
