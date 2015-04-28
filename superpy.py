@@ -762,3 +762,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         
         #if isinstance(b, MetaArray):
             #b = b.asarray()
+    """
+        self.assert_((mat.asArray() == eye(10)).all())
+        mat = IdentityMatrix(10, 2) # With a 2 coefficient.
+        self.assert_((mat.asArray() == 2*eye(10)).all())
+
