@@ -767,3 +767,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         mat = IdentityMatrix(10, 2) # With a 2 coefficient.
         self.assert_((mat.asArray() == 2*eye(10)).all())
 
+        f.create_dataset("dist", data=np.asarray(self.dist))
+        f.create_dataset("rot", data=np.asarray(self.rot))
+        f.create_dataset("trans", data=np.asarray(self.trans))
+        f.close()
+        f = h5.File(filename, 'w')
