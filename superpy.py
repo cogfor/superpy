@@ -782,3 +782,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
 
     """
     >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
+            elif isinstance(data, tuple):  ## create empty array with specified shape
+        ma = MetaArray._h5py_metaarray.MetaArray(file=fileName)
+        self._data = ma.asarray()._getValue()
+        self._info = ma._info._getValue()
+        if isinstance(b, MetaArray):
