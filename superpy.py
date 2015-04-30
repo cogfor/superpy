@@ -777,3 +777,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
     '''Compute the sqrt of the mean of the squares (RMS)'''
     return np.sqrt(np.mean(np.asarray(x)**2,axis=axis))
 
+
+    measures = npy.asarray(measures)
+
+    """
+    >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
