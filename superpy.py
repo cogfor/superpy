@@ -787,3 +787,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         self._data = ma.asarray()._getValue()
         self._info = ma._info._getValue()
         if isinstance(b, MetaArray):
+    
+        self.assertTrue(np.all(s.asarray() == t.asarray()))
+        
+
+        src[:, 3] = 1.0
