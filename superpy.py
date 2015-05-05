@@ -792,3 +792,8 @@ wages = asarray(DataReader('WASCUR', 'fred',
         
 
         src[:, 3] = 1.0
+investment = asarray(DataReader('GPDIC96', 'fred',
+                                start=start1, end=end1)).squeeze()
+consumption = asarray(DataReader('PCECC96', 'fred',
+                                start=start1, end=end1)).squeeze()
+interest_rate = asarray(DataReader('TB3MS', 'fred',
