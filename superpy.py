@@ -797,3 +797,8 @@ investment = asarray(DataReader('GPDIC96', 'fred',
 consumption = asarray(DataReader('PCECC96', 'fred',
                                 start=start1, end=end1)).squeeze()
 interest_rate = asarray(DataReader('TB3MS', 'fred',
+
+    x = np.asarray(x)
+    m, k = x.shape
+    y = np.asarray(y)
+    n, kk = y.shape
