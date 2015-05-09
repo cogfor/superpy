@@ -802,3 +802,8 @@ interest_rate = asarray(DataReader('TB3MS', 'fred',
     m, k = x.shape
     y = np.asarray(y)
     n, kk = y.shape
+        self.tri_halo[:,2:6] += npy.asarray([x,y,x,y])
+
+    >>> p3 = npy.asarray([1,1])
+    >>> print area_of_triangle(p1,p2,p3)
+    """
