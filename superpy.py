@@ -807,3 +807,8 @@ interest_rate = asarray(DataReader('TB3MS', 'fred',
     >>> p3 = npy.asarray([1,1])
     >>> print area_of_triangle(p1,p2,p3)
     """
+        dref = np.asarray([PIX_ERR, 0])
+        if (fit[-1] != 1) or (err == None) or (sum(err[2:]) >= mismatch):
+            refs = np.append(refs, np.asarray((centerest, refx)), axis = 1)
+            refs_err = np.append(refs_err, 1)
+        rx = np.tile(refx,N)
