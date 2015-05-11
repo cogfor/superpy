@@ -812,3 +812,8 @@ interest_rate = asarray(DataReader('TB3MS', 'fred',
             refs = np.append(refs, np.asarray((centerest, refx)), axis = 1)
             refs_err = np.append(refs_err, 1)
         rx = np.tile(refx,N)
+        self.assert_((mat.asArray() == self.laplacian).all())
+
+        mat.setDiagonal([2]*10)
+        self.assert_((mat.asArray() == 2*eye(10)).all())
+
