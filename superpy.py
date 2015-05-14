@@ -817,3 +817,8 @@ interest_rate = asarray(DataReader('TB3MS', 'fred',
         mat.setDiagonal([2]*10)
         self.assert_((mat.asArray() == 2*eye(10)).all())
 
+    out['asps'] = np.asarray((asps, asps_err))
+    return out, extra_out
+    out = {}
+            extra_img['refs'] = refs
+    out['pips'] = np.asarray((pips, pips_err))
