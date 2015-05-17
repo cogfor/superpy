@@ -822,3 +822,8 @@ interest_rate = asarray(DataReader('TB3MS', 'fred',
     out = {}
             extra_img['refs'] = refs
     out['pips'] = np.asarray((pips, pips_err))
+
+                          [0.0, 0.0, 1.0, -2.0, -2.0]])
+        self.b = asarray([5.0, -3.0])
+
+        self.pt = (-1.725, 2.9, 0.725)
