@@ -827,3 +827,8 @@ interest_rate = asarray(DataReader('TB3MS', 'fred',
         self.b = asarray([5.0, -3.0])
 
         self.pt = (-1.725, 2.9, 0.725)
+                    y.append(c)
+    if dtype is None:
+        return np.asarray(X)
+    return np.asarray(X, dtype=dtype)
+
