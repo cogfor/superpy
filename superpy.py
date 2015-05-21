@@ -837,3 +837,8 @@ interest_rate = asarray(DataReader('TB3MS', 'fred',
     results['volume'] = np.asarray((volume,volume_err))
     results['piprad'] = np.asarray((piprad,piprad_err))
                 avererr = err.reshape((-1,aver)).mean(axis=1)
+wages = asarray(DataReader('WASCUR', 'fred',
+                                start=start1, end=end1)).squeeze()
+labor = asarray(DataReader('PAYEMS', 'fred',
+# Use pandas DataReader to get data from fred
+output = asarray(DataReader('GDPC1', 'fred',
