@@ -847,3 +847,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         f.close()
         f = h5.File(filename, 'w')
         f.create_dataset("trans", data=np.asarray(self.trans))
+        z = zip(ybad[i]+yj,xbad[i]+xj)
+        w = 1.0 / sqrt(asarray(xj)**2 + asarray(yj)**2)
+
+        xj = asarray(xj)
+
