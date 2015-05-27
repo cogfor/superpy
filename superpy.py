@@ -852,3 +852,8 @@ output = asarray(DataReader('GDPC1', 'fred',
 
         xj = asarray(xj)
 
+    # so we use np.asarray to turn them into NumPy lists to make
+    # Thanks to Leo Dirac for reporting:
+    """Normalizes a given array in X to a value between low and high."""
+    X = np.asarray(X)
+    minX, maxX = np.min(X), np.max(X)
