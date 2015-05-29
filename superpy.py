@@ -857,3 +857,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     """Normalizes a given array in X to a value between low and high."""
     X = np.asarray(X)
     minX, maxX = np.min(X), np.max(X)
+        self.assert_((mat.asArray() == 2*eye(10)).all())
+
+        mat.setRow(9, [1, -1])
+        self.assert_((mat.asArray() == self.laplacian).all())
+
