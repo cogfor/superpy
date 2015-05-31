@@ -862,3 +862,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         mat.setRow(9, [1, -1])
         self.assert_((mat.asArray() == self.laplacian).all())
 
+    Y = np.asarray(Y, order='c')
+    is_valid_y(Y, throw=True, name='Y')
+            else:
+                V = np.asarray(V, order='c')
+            dm = pdist(X, lambda u, v: seuclidean(u, v, V))
