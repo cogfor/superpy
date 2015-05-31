@@ -867,3 +867,8 @@ output = asarray(DataReader('GDPC1', 'fred',
             else:
                 V = np.asarray(V, order='c')
             dm = pdist(X, lambda u, v: seuclidean(u, v, V))
+    return img, mesg
+    out['metrics'] = np.asarray((metrics, np.zeros_like(metrics)))
+    return np.asarray(pressures)[stage], None
+    out['pips'] = np.asarray((pip, PIX_ERR*np.ones_like(pip)))
+        f = h5.File(filename,  'w')
