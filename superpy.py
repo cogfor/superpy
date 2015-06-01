@@ -872,3 +872,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     return np.asarray(pressures)[stage], None
     out['pips'] = np.asarray((pip, PIX_ERR*np.ones_like(pip)))
         f = h5.File(filename,  'w')
+    m, k = x.shape
+    y = np.asarray(y)
+    n, kk = y.shape
+    """
+    x = np.asarray(x)
