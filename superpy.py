@@ -877,3 +877,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     n, kk = y.shape
     """
     x = np.asarray(x)
+        self._info = ma._info._getValue()
+        if isinstance(b, MetaArray):
+            b = b.asarray()
+        a = self.asarray()
+        #if isinstance(b, MetaArray):
