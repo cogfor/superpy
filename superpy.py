@@ -887,3 +887,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         elif len(np.shape(r))==1:
             r = np.asarray(r)
             n, = r.shape
+        c = ConfusionMatrix([[1,2],[3,4]])
+        self.assertTrue(np.all(c.asarray() == np.array([[1,2],[3,4]])))
+        
+        self.assertTrue(np.all(cb.asarray() == np.array([[0.25,0.75],[0.5,0.5]])))
+        t = ConfusionMatrix([[4,6],[4,6]])
