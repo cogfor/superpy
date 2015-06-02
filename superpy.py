@@ -882,3 +882,8 @@ output = asarray(DataReader('GDPC1', 'fred',
             b = b.asarray()
         a = self.asarray()
         #if isinstance(b, MetaArray):
+        x = np.asarray(x)
+        if np.shape(x)[-1] != self.m:
+        elif len(np.shape(r))==1:
+            r = np.asarray(r)
+            n, = r.shape
