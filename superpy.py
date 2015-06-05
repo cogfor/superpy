@@ -902,3 +902,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                 # Valid matches are those where y co-ordinate of p1 and p2 are
                 #print "matches found"
         self.data = np.asarray(data)
+        #return MetaArray(self.asarray() - b, info=self.infoCopy())
+
+                self._info = data._info
+                self._data = data.asarray()
+            elif isinstance(data, tuple):  ## create empty array with specified shape
