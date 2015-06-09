@@ -907,3 +907,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                 self._info = data._info
                 self._data = data.asarray()
             elif isinstance(data, tuple):  ## create empty array with specified shape
+    x = np.asarray(x)
+    y = np.asarray(y)
+    if p == np.inf:
+        """
+        x = np.asarray(x)
