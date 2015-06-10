@@ -917,3 +917,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         return np.asarray(X)
     return np.asarray(X, dtype=dtype)
 
+        mat.setDiagonal([2]*10)
+        self.assert_((mat.asArray() == 2*eye(10)).all())
+
+        (mat, bandIndices) = BandedMatrix(10, -1, 0, 1)  # 10x10 tri-diagonal matrix.
+        self.assert_((mat.asArray() == zeros((10,10))).all())
