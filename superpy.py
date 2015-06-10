@@ -912,3 +912,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     if p == np.inf:
         """
         x = np.asarray(x)
+                    y.append(c)
+    if dtype is None:
+        return np.asarray(X)
+    return np.asarray(X, dtype=dtype)
+
