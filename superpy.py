@@ -922,3 +922,8 @@ output = asarray(DataReader('GDPC1', 'fred',
 
         (mat, bandIndices) = BandedMatrix(10, -1, 0, 1)  # 10x10 tri-diagonal matrix.
         self.assert_((mat.asArray() == zeros((10,10))).all())
+        # Create unit vectors along edges of the view frustum
+        edge_points = np.asarray([(0, 0), (self.width, 0), 
+                                  (self.width, self.height), (0, self.height)])
+                kp_l = np.asarray(im_left.keypoints)[idx_l]
+        cart_coords = misctools.spherical_to_cartesian(
