@@ -927,3 +927,8 @@ output = asarray(DataReader('GDPC1', 'fred',
                                   (self.width, self.height), (0, self.height)])
                 kp_l = np.asarray(im_left.keypoints)[idx_l]
         cart_coords = misctools.spherical_to_cartesian(
+        f.create_dataset("rot", data=np.asarray(self.rot))
+        f.create_dataset("trans", data=np.asarray(self.trans))
+        f.close()
+        f = h5.File(filename, 'w')
+        f.create_dataset("trans", data=np.asarray(self.trans))
