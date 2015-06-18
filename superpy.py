@@ -937,3 +937,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     y = np.asarray(y)
     if p==np.inf or p==1:
         """
+        #if isinstance(b, MetaArray):
+            #b = b.asarray()
+
+        return None, value
+        return None, None, mesg
