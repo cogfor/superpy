@@ -942,3 +942,8 @@ output = asarray(DataReader('GDPC1', 'fred',
 
         return None, value
         return None, None, mesg
+            refs = np.append(refs, np.asarray((centerest, refx)), axis = 1)
+            refs_err = np.append(refs_err, 1)
+        refy = np.asarray((np.argmax(filtered[:mid]), np.argmax(filtered[mid:])+mid))
+            a, b, x0, s = fit[0]
+            refs = np.append(refs, np.asarray((x0 - s, refx)), axis = 1)
