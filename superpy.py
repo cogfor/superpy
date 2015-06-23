@@ -947,3 +947,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         refy = np.asarray((np.argmax(filtered[:mid]), np.argmax(filtered[mid:])+mid))
             a, b, x0, s = fit[0]
             refs = np.append(refs, np.asarray((x0 - s, refx)), axis = 1)
+        
+
+        src[:, 3] = 1.0
+        P = np.asarray(self.P, dtype=np.float)
+        dst = blas.dgemv(np.array([P], order='C'), src)
