@@ -957,3 +957,8 @@ output = asarray(DataReader('GDPC1', 'fred',
        x can also be a list of vectors'''
     x = np.asarray(x)
     sh = list(x.shape)
+    """
+    >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
+    >>> print mrdo_speed(xy)
+        measures.append((pl,avg,mrdo,hull_surf,hull_d,hull_density,hull_drel))
+    measures = npy.asarray(measures)
