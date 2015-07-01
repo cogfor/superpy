@@ -962,3 +962,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     >>> print mrdo_speed(xy)
         measures.append((pl,avg,mrdo,hull_surf,hull_d,hull_density,hull_drel))
     measures = npy.asarray(measures)
+        self._info = ma._info._getValue()
+        if isinstance(b, MetaArray):
+            b = b.asarray()
+        a = self.asarray()
+        #if isinstance(b, MetaArray):
