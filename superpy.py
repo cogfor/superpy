@@ -972,3 +972,8 @@ output = asarray(DataReader('GDPC1', 'fred',
             refs_err = np.append(refs_err, 1)
         rx = np.tile(refx,N)
             a, b, x0, s = fit[0]
+                                start=start1, end=end1)).squeeze()
+interest_rate = asarray(DataReader('TB3MS', 'fred',
+                                start=start1, end=end1)).squeeze()
+import pandas as pd
+from numpy import asarray
