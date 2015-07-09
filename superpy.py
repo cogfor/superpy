@@ -977,3 +977,8 @@ interest_rate = asarray(DataReader('TB3MS', 'fred',
                                 start=start1, end=end1)).squeeze()
 import pandas as pd
 from numpy import asarray
+        self.pt = (-0.09, 0.03, 0.25, -0.19, 0.03)
+        self.A = asarray([[1.0, 3.0, 0.0, 0.0,  0.0],
+                          [0.0, 0.0, 1.0, 1.0, -2.0],
+        self.pt = (1.0, 1.0, 1.0, 1.0, 1.0)
+        self.A = asarray([[1.0, 1.0, 1.0,  1.0,  1.0],
