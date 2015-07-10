@@ -987,3 +987,8 @@ from numpy import asarray
     >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
     >>> print avg_speed(xy)
 
+            refs = np.append(refs, np.asarray((centerest, refx)), axis = 1)
+            refs_err = np.append(refs_err, 1)
+        rx = np.tile(refx,N)
+            a, b, x0, s = fit[0]
+            refs = np.append(refs, np.asarray((x0 + s, refx)), axis = 1)
