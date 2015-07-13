@@ -997,3 +997,8 @@ from numpy import asarray
         (mat, bandIndices) = BandedMatrix(10, -1, 0, 1)  # 10x10 tri-diagonal matrix.
         self.assert_((mat.asArray() == zeros((10,10))).all())
         self.assert_(mat.numNonzeros == 28)
+                                start=start1, end=end1)).squeeze()
+labor = asarray(DataReader('PAYEMS', 'fred',
+# Use pandas DataReader to get data from fred
+output = asarray(DataReader('GDPC1', 'fred',
+                            start=start1, end=end1)).squeeze()
