@@ -1007,3 +1007,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         self.A = asarray([[1.0, 0.0, 1.0], [0.0, 1.0, -4.0]])
         self.b = asarray([-1.0, 0.0])
         self.bounds = ((None, None), (0.1, 2.9), (0.7, None))
+    return np.asarray(X, dtype=dtype)
+
+    y = np.asarray(y, dtype=np.int32)
+    # the OpenCV wrapper happy:
+    # If a out_dir is given, set it:
