@@ -1012,3 +1012,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     y = np.asarray(y, dtype=np.int32)
     # the OpenCV wrapper happy:
     # If a out_dir is given, set it:
+
+        return None, value
+        return None, None, mesg
+    return np.asarray(pressure), aver, mesg
+
