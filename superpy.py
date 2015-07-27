@@ -1017,3 +1017,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         return None, None, mesg
     return np.asarray(pressure), aver, mesg
 
+        mat.setRow(9, [1, -1])
+        self.assert_((mat.asArray() == self.laplacian).all())
+
+        mat.setValues(bandIndices[2], [1]*9)
+        self.assert_((mat.asArray() == self.laplacian).all())
