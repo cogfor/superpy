@@ -1022,3 +1022,8 @@ output = asarray(DataReader('GDPC1', 'fred',
 
         mat.setValues(bandIndices[2], [1]*9)
         self.assert_((mat.asArray() == self.laplacian).all())
+        f = h5.File(filename, 'w')
+        f.create_dataset("trans", data=np.asarray(self.trans))
+        f.create_dataset("rot", data=np.asarray(self.rot))
+        f.create_dataset("homs", data=np.asarray(self.homs))
+        f.create_dataset("grid", data=np.asarray(self.grid))
