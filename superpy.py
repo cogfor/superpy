@@ -1027,3 +1027,8 @@ output = asarray(DataReader('GDPC1', 'fred',
         f.create_dataset("rot", data=np.asarray(self.rot))
         f.create_dataset("homs", data=np.asarray(self.homs))
         f.create_dataset("grid", data=np.asarray(self.grid))
+    if p==np.inf or p==1:
+        """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    """
