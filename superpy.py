@@ -1037,3 +1037,8 @@ output = asarray(DataReader('GDPC1', 'fred',
     # Learn the model. Remember our function returns Python lists,
                         im = cv2.resize(im, sz)
                     X.append(np.asarray(im, dtype=np.uint8))
+            b = b.asarray()
+        a = self.asarray()
+        #if isinstance(b, MetaArray):
+            #b = b.asarray()
+        #return self.asarray() != b
