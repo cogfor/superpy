@@ -38,3 +38,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
         self.pt = (-1.725, 2.9, 0.725)
         self.A = asarray([[1.0, 0.0, 1.0], [0.0, 1.0, -4.0]])
         self.b = asarray([-1.0, 0.0])
+    >>> p3 = npy.asarray([1,1])
+    >>> print area_of_triangle(p1,p2,p3)
+    """
+    >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
+    >>> print avg_speed(xy)
