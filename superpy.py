@@ -53,3 +53,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
         self.b = asarray([-1.0, 0.0])
         self.bounds = ((None, None), (0.1, 2.9), (0.7, None))
 from numpy.testing import *
+        
+    def test_asarray(self):
+        c = ConfusionMatrix([[1,2],[3,4]])
+        self.assertTrue(np.all(c.asarray() == np.array([[1,2],[3,4]])))
+        
