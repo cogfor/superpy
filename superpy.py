@@ -58,3 +58,8 @@ from numpy.testing import *
         c = ConfusionMatrix([[1,2],[3,4]])
         self.assertTrue(np.all(c.asarray() == np.array([[1,2],[3,4]])))
         
+            else:
+                VI = np.asarray(VI, order='c')
+            [VI] = _copy_arrays_if_base_present([VI])
+wages = asarray(DataReader('WASCUR', 'fred',
+                                start=start1, end=end1)).squeeze()
