@@ -43,3 +43,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     """
     >>> xy = npy.asarray([[0,0],[0,1],[1,1],[1,0]])
     >>> print avg_speed(xy)
+    out['asps'] = np.asarray((asp, PIX_ERR*np.ones_like(asp)))
+    out = {}
+    out['piprads'] = np.asarray(
+                            (piprad, PIX_ERR*np.sqrt(2)*np.ones_like(piprad)))
+    if img.dtype == np.int32:
