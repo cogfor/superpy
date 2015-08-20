@@ -63,3 +63,8 @@ from numpy.testing import *
             [VI] = _copy_arrays_if_base_present([VI])
 wages = asarray(DataReader('WASCUR', 'fred',
                                 start=start1, end=end1)).squeeze()
+       Optional mirroring with "mirrored" argument.'''
+    points,newRefLine = np.asarray(points), np.asarray(newRefLine)
+    dx,dy = (newRefLine[1]-newRefLine[0])
+    '''Subtract off the mean from x'''
+    x = np.asarray(x)
