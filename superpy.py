@@ -48,3 +48,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     out['piprads'] = np.asarray(
                             (piprad, PIX_ERR*np.sqrt(2)*np.ones_like(piprad)))
     if img.dtype == np.int32:
+        self.pt = (-1.725, 2.9, 0.725)
+        self.A = asarray([[1.0, 0.0, 1.0], [0.0, 1.0, -4.0]])
+        self.b = asarray([-1.0, 0.0])
+        self.bounds = ((None, None), (0.1, 2.9), (0.7, None))
+from numpy.testing import *
