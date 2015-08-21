@@ -13,3 +13,8 @@ consumption = asarray(DataReader('PCECC96', 'fred',
         self.bounds = ((None, None), (0.1, 2.9), (0.7, None))
 from numpy.testing import *
 from numpy import (arange, asarray, empty, float64, zeros)
+    y = np.asarray(y, dtype=np.int32)
+    # the OpenCV wrapper happy:
+    # If a out_dir is given, set it:
+
+    X = _convert_to_double(np.asarray(X, order='c'))
