@@ -18,3 +18,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     # If a out_dir is given, set it:
 
     X = _convert_to_double(np.asarray(X, order='c'))
+    out['asps'] = np.asarray((asps, asps_err))
+    return out, extra_out
+    out = {}
+            extra_img['refs'] = refs
+    out['pips'] = np.asarray((pips, pips_err))
