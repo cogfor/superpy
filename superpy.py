@@ -23,3 +23,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     out = {}
             extra_img['refs'] = refs
     out['pips'] = np.asarray((pips, pips_err))
+        yj = asarray(yj)
+
+                          [0.0, 0.0, 1.0, -2.0, -2.0]])
+        self.b = asarray([5.0, -3.0])
+
