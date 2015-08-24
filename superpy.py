@@ -28,3 +28,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
                           [0.0, 0.0, 1.0, -2.0, -2.0]])
         self.b = asarray([5.0, -3.0])
 
+    out['vess'] = np.asarray((ves, PIX_ERR*np.ones_like(ves)))
+    out['asps'] = np.asarray((asp, PIX_ERR*np.ones_like(asp)))
+    out = {}
+    out['piprads'] = np.asarray(
+                            (piprad, PIX_ERR*np.sqrt(2)*np.ones_like(piprad)))
