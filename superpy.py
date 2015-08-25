@@ -33,3 +33,8 @@ from numpy import (arange, asarray, empty, float64, zeros)
     out = {}
     out['piprads'] = np.asarray(
                             (piprad, PIX_ERR*np.sqrt(2)*np.ones_like(piprad)))
+        self.b = asarray([5.0, -3.0])
+
+        self.pt = (-1.725, 2.9, 0.725)
+        self.A = asarray([[1.0, 0.0, 1.0], [0.0, 1.0, -4.0]])
+        self.b = asarray([-1.0, 0.0])
